@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Germorid</title>
+  <link rel="stylesheet" href="styles2523.css" />
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.jpeg" alt="Germorid Logo" class="logo-img" />
+      <span>Germorid</span>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="nav-menu" class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#products" onclick="toggleMenu()">Our Products</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About Us</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero with video background -->
+  <section id="home" class="video-section">
+    <video autoplay muted loop class="bg-video">
+      <source src="vdo.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay">
+      <div class="hero-content">
+        <h1> Elegance. Purity. Germorid</h1>
+        <p>Elevate your home with clean and luxurious care daily.</p>
+        <a href="Product Catalogue                                .pdf" class="cta-button">Discover Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <section class="banner">
+      <img src="all products.jpg" alt="All Germorid Products" class="full-banner" />
+    </section>
+
+    <div class="product-grid">
+
+      <a href="toilet-cleaner.html" class="product-card">
+        <div class="product-image">
+          <img src="tltc.jpeg" alt="Toilet Cleaner" />
+        </div>
+        <h3>Toilet Cleaner</h3>
+        <p>Effortlessly tackles stains and odors for a spotless toilet with every use.</p>
+      </a>
+
+      <a href="bathroom-cleaner.html" class="product-card">
+        <div class="product-image">
+          <img src="bathroomc.jpeg" alt="Bathroom Cleaner" />
+        </div>
+        <h3>Bathroom Cleaner</h3>
+        <p>Deep cleans, removes grime, and leaves a long-lasting fragrance.</p>
+      </a>
+
+      <a href="detergent-powder.html" class="product-card">
+        <div class="product-image">
+          <img src="powder.jpeg" alt="Detergent Powder" />
+        </div>
+        <h3>Detergent Powder</h3>
+        <p>Powerful stain removal with fabric-safe freshness.</p>
+      </a>
+
+      <a href="glass-cleaner.html" class="product-card">
+        <div class="product-image">
+          <img src="gcleaner.jpeg" alt="Glass Cleaner" />
+        </div>
+        <h3>Glass Cleaner</h3>
+        <p>Crystal-clear shine for all glass surfaces, no streaks.</p>
+      </a>
+
+      <a href="floor-cleaner.html" class="product-card">
+        <div class="product-image">
+          <img src="floorc.jpg" alt="Floor Cleaner" />
+        </div>
+        <h3>Floor Cleaner</h3>
+        <p>For hygienic, streak-free floors with a refreshing scent.</p>
+      </a>
+
+      <a href="dishwash-gel.html" class="product-card">
+        <div class="product-image">
+          <img src="dishwash.jpg" alt="Dishwash Gel" />
+        </div>
+        <h3>Dishwash Gel</h3>
+        <p>Cuts grease fast. Leaves dishes sparkling and hands soft.</p>
+      </a>
+            <a href="SS-Detergent.html" class="product-card">
+        <div class="product-image">
+          <img src="ss detergent .jpg" alt="SS Detergent-Powder" />
+        </div>
+        <h3>SS Detergent-Powder</h3>
+        <p>Tough on stains. Gentle on fabrics. Freshness you can feel.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      At Germorid, we craft high-performance cleaning solutions that blend luxury, science, and care.
+      Designed for modern households, our products eliminate germs while preserving the elegance of your space.
+    </p>
+    <a href="about.html" class="cta-button" style="margin-top: 1rem; display: inline-block;">Read More</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <p>
+      <i class="fas fa-envelope contact-icon"></i>
+      <strong>Email:</strong>
+      <a href="mailto:germorid@gmail.com">germorid@gmail.com</a>
+    </p>
+    <p>
+      <i class="fas fa-phone contact-icon"></i>
+      <strong>Phone:</strong>
+      <a href="tel:+918393864959">+91 8393864959</a>
+    </p>
+    <p>
+      <i class="fab fa-instagram contact-icon"></i>
+      <strong>Instagram:</strong>
+      <a href="https://instagram.com/germoridcare" target="_blank">@germoridcare</a>
+    </p>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="logo.jpeg" alt="Germorid Logo" />
+    </div>
+    <p>&copy; 2025 Germorid | All Rights Reserved | Made with ❤️ by Aastha</p>
+  </footer>
+
+  <!-- JS for Menu Toggle -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("nav-menu");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
